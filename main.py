@@ -1,10 +1,11 @@
 from data import *
 import os
 
+# Path: Paint-App\data.py, this is the file that contains all the variables
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Drawing Program")
 
-
+# defines grid size
 def init_grid(rows, cols, color):
     grid = []
 
@@ -68,7 +69,7 @@ buttons = [
     Button(310, button_y, 50, 50, WHITE, "Clear", BLACK),
     Button(370, button_y, 50, 50, WHITE, "Grid", BLACK)
 ]
-
+# main loop, checks if mouse clicked, if so, it will draw on the grid
 while run:
     clock.tick(FPS)
 
